@@ -46,11 +46,15 @@ function atkin(limit) {
 }
 
 export function generatePrime(n) {
-  const limit = estimateLimit(n)
+  if (n < 1) throw new Error('You need to generate at least 1 prime.')
+
+  const expectedNumber = parseInt(n)
+
+  const limit = estimateLimit(expectedNumber)
   if (limit === null) {
     const basePrime = [2, 3, 5, 7, 11]
-    return basePrime.splice(0, n)
+    return basePrime.splice(0, expectedNumber)
   }
   const res = atkin(limit)
-  return res.splice(0, n)
+  return res.splice(0, expectedNumber)
 }

@@ -20,6 +20,17 @@ test('expect to generate primes with n < 6', () => {
   expect(res5).toEqual(expected5)
 })
 
+test("can't use number smaller than 1", () => {
+  expect(() => generatePrime(-2)).toThrow('You need to generate at least 1 prime.')
+  expect(() => generatePrime(0)).toThrow('You need to generate at least 1 prime.')
+})
+
+test('parse to whole number', () => {
+  const res = generatePrime(1.5)
+  const expected = [2]
+  expect(res).toEqual(expected)
+})
+
 test('expect to generate primes with n = 6', () => {
   const res = generatePrime(6)
   const expected = [2, 3, 5, 7, 11, 13]
