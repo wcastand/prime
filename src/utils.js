@@ -52,6 +52,5 @@ export function generatePrime(n) {
     return basePrime.splice(0, n)
   }
   const res = atkin(limit)
-  console.log(limit, n, res.length)
   return res.splice(0, n)
 }

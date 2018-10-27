@@ -5,14 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "testdev": "jest --watch"
+    "testdev": "jest --watch",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "keywords": [],
   "author": "wcastand <wcastand@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "next": "^7.0.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
