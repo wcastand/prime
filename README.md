@@ -43,4 +43,4 @@ Look for a way to improve the guessing of how much the limit needs to be for the
 
 Probably look at a better interface to present the result. The array is simple and efficient but when you have so many numbers it becomes hard to not get lost, also on a mobile it will probably be not readable in this state. Add some way to only show a range on the array would be a good way to improve readability and presentation on both desktop and mobile.
 
-I would use some loading state also to handle cases like 1000 prime generated with his table (1 000 000 result was a lot for my mac).
+I would use some loading state also to handle cases like 1000 prime generated with the table (1 000 000 result was a lot for my mac).
