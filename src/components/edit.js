@@ -1,5 +1,5 @@
-export default props => (
-  <span onClick={props.edit}>
+export default ({ edit }) => (
+  <span onClick={edit}>
     ✎
     <style jsx>{`
       span {

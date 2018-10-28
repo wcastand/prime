@@ -1,5 +1,5 @@
 export default props => (
-  <th>
+  <th {...props}>
     {props.children}
     <style jsx>{`
       th {

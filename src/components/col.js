@@ -1,5 +1,5 @@
 export default props => (
-  <td>
+  <td {...props}>
     {props.children}
     <style jsx>{`
       td {
